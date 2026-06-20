@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSurplus - Reducing Food Waste, One Meal at a Time</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <h1 style="line-height: 0.8; margin: 0; padding: 0;">FoodSurplus<br><span style="color: #0066cc; font-size: 0.6em; line-height: 0.8; display: inline-block; margin-top: -12px;">Technologies Nigeria LTD</span></h1>
+        
+        <!-- Desktop Navigation -->
+        <div class="desktop-nav">
+            <ul>
+                <li id="aboutDesktopLink">About</li>
+                <li><a href="https://foodsurplusng.com">Compare</a></li>
+                <li><a href="#section3">Referral</a></li>
+                <li><a href="https://foodsurplusng.com">Shop</a></li>
+                <li id="contactDesktopLink">Contact</li>
+            </ul>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    </div>
+</header>
+<nav id="navbar" role="navigation">
+    <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+    <ul>
+        <li><a href="#" id="aboutLink">About</a></li>
+        <li><a href="https://foodsurplusng.com">Compare</a></li>
+        <li><a href="#section3">Referral</a></li>
+        <li><a href="https://foodsurplusng.com">Shop</a></li>
+        <li id="contactLink" style="cursor: pointer;">Contact</li>
+    </ul>
+</nav>
+
+    <!-- How it Works Modal -->
+    <div id="howModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="howModalTitle" hidden>
+        <div class="modal-content" role="document">
+            <button class="modal-close" id="modalClose" aria-label="Close dialog">✕</button>
+            <h2 id="howModalTitle">How it Works</h2>
+            <div class="modal-body">
+                <ol>
+                    <li><strong>Suppliers</strong> send in products that need to be consumed within a week — like fresh food, produce, dairy, or baked goods.</li>
+                    <li>Because the products have a short window, suppliers offer them at prices <strong>close to their own cost</strong>. This way they recover most of their money instead of taking a loss.</li>
+                    <li><strong>Instant warehousing</strong> means we don't store anything long-term. Products move in and out within hours.</li>
+                    <li><strong>Buyers</strong> order online. We pick, pack, and ship immediately — sometimes same day, always within 24 hours.</li>
+                    <li>Since nothing sits around, our storage costs are almost zero. We pass those savings directly to you.</li>
+                    <li><strong>You get products at very low prices</strong> — much lower than retail or even wholesale — because you're buying at near-supplier cost with almost no warehousing markup.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div id="contactModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle" hidden>
+        <div class="modal-content" role="document">
+            <button class="modal-close" id="contactModalClose" aria-label="Close dialog">✕</button>
+
+            <h2 id="contactModalTitle">Contact Us</h2>
+
+            <div class="modal-body">
+                <p style="margin-top:1rem;">
+                    We'd love to hear from you.
+                </p>
+
+                <p style="margin-top:1rem;">
+                    <strong>Email:</strong><br>
+                    <a href="mailto:info@foodsurplusng.com">
+                        info@foodsurplusng.com
+                    </a>
+                </p>
+
+                <p style="margin-top:1rem;">
+                    <strong>WhatsApp:</strong><br>
+                    <a href="https://wa.me/23490771650345" target="_blank">
+                        090771650345
+                    </a>
+                    <i  style="color: #25D366; margin-left: 0.5rem;"></i>
+
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Section 1 -->
+        <section id="section1" class="content-section">
+            <div class="section-content">
+                <img src="resources/1.png" alt="Learn How" class="section-image">
+                <button class="btn btn-learn" onclick="openModal(howModal)">How it Works</button>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="section2" class="content-section">
+            <div class="section-content">
+                <img src="resources/2.png" alt="Compare Prices" class="section-image">
+                <button class="btn btn-compare" onclick="window.location.href = 'https://foodsurplusng.com'">Compare Prices</button>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="section3" class="content-section">
+            <div class="section-content">
+                <img src="resources/3.png" alt="Join Referral Program" class="section-image">
+                <button class="btn btn-referral" onclick="window.location.href = 'https://foodsurplus.ng'">Join Referral Program</button>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="section4" class="content-section">
+            <div class="section-content">
+                <img src="resources/4.png" alt="Shop Now" class="section-image">
+                <button class="btn btn-shop" onclick="window.location.href = 'https://foodsurplusng.com'">Shop Now</button>
+            </div>
+        </section>
+       
+
+  <!-- ========== CORRECTED & ENHANCED FOODSURPLUS FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <h2 class="footer-logo">FoodSurplus</h2>
+          <p class="footer-tagline">Reducing food waste, one meal at a time.</p>
+          <p class="footer-mission">Fresh surplus food at near-cost prices — smart, sustainable, and accessible for everyone. Join the movement against food waste.</p>
+        </div>
+
+        <!-- Quick links column -->
+        <div class="footer-links">
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="https://foodsurplusng.com">Compare Prices</a></li>
+            <li><a href="">Referral Program</a></li>
+            <li><a href="https://foodsurplusng.com">Shop Now</a></li>
+            <li onclick="openModal(contactModal)">Contact Support</li>
+          </ul>
+        </div>
+
+        <!-- Contact & info column -->
+        <div class="footer-contact">
+          <h3 class="footer-heading">Get in Touch</h3>
+          <div class="contact-details">
+            <p class="contact-email">
+              📧 <a href="mailto:info@foodsurplusng.com">info@foodsurplusng.com</a>
+            </p>
+            <p class="contact-hours">🕒 Mon - Fri: 9am – 6pm (WAT)</p>
+            <p class="contact-hours">📍 Lagos — Global impact</p>
+          </div>
+          <div class="social-placeholder">
+            <span class="social-note">♻️ #FightFoodWaste &nbsp;|&nbsp; Save & Earn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom bar with copyright & legal -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2024 FoodSurplus. All rights reserved. | Reducing waste, empowering communities.</p>
+        </div>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="separator">|</span>
+          <a href="#">Terms of Service</a>
+          <span class="separator">|</span>
+          <a href="#">Cookie Preferences</a>
+          <span class="separator">|</span>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <!-- ========== END FOOTER ========== -->
+</body>
+</html>
